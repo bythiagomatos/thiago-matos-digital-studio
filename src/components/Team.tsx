@@ -1,31 +1,53 @@
 import { Linkedin, Instagram } from "lucide-react";
+import carinhaImg from "@/assets/carinha.png";
+import mundoImg from "@/assets/mundo.png";
+import bolaGolfeImg from "@/assets/bola-golfe.png";
 
 const team = [
   {
     name: "Thiago Matos",
     role: "Fundador & Diretor Criativo",
-    description: "Estratégia, direção criativa e gestão de projetos.",
-  },
-  {
-    name: "Lucas José",
-    role: "Desenvolvedor",
-    description: "Desenvolvimento web e soluções tecnológicas.",
+    description: "Designer e desenvolvedor web com visão estratégica.",
   },
   {
     name: "Matheus Matos",
-    role: "Designer",
-    description: "Identidade visual e design gráfico.",
+    role: "Co-fundador & Diretor de Tecnologia",
+    description: "Liderança técnica e soluções inovadoras.",
+  },
+  {
+    name: "Lucas José",
+    role: "Designer & Social Media",
+    description: "Design, animação, conteúdo e gestão de redes sociais.",
   },
   {
     name: "Pedro Elias",
-    role: "Social Media",
-    description: "Gestão de redes sociais e criação de conteúdo.",
+    role: "Desenvolvedor de Software",
+    description: "Desenvolvimento de aplicações e sistemas.",
   },
 ];
 
 const Team = () => {
   return (
-    <section id="equipe" className="py-24 relative">
+    <section id="equipe" className="py-24 relative overflow-hidden">
+      {/* Decorative elements */}
+      <img 
+        src={carinhaImg} 
+        alt="" 
+        className="absolute -right-20 top-10 w-48 h-48 opacity-20 animate-float pointer-events-none"
+      />
+      <img 
+        src={mundoImg} 
+        alt="" 
+        className="absolute -left-32 bottom-20 w-72 opacity-15 animate-float pointer-events-none"
+        style={{ animationDelay: "1s" }}
+      />
+      <img 
+        src={bolaGolfeImg} 
+        alt="" 
+        className="absolute right-10 bottom-10 w-24 h-24 opacity-25 animate-float pointer-events-none"
+        style={{ animationDelay: "2s" }}
+      />
+      
       <div className="container relative z-10 mx-auto px-4">
         <div className="text-center mb-16">
           <span className="animate-fade-up opacity-0 inline-block px-4 py-2 rounded-full glass text-sm font-medium text-primary mb-4">

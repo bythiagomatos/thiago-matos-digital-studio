@@ -5,7 +5,6 @@ import {
   Palette, 
   Target, 
   MessageCircle, 
-  Search, 
   ShoppingCart, 
   Star, 
   Mail 
@@ -41,11 +40,6 @@ const services = [
     icon: MessageCircle,
     title: "Automação WhatsApp",
     description: "Chatbots inteligentes para atendimento 24/7.",
-  },
-  {
-    icon: Search,
-    title: "SEO Local",
-    description: "Otimização para sua empresa aparecer nas buscas da região.",
   },
   {
     icon: ShoppingCart,
